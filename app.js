@@ -8,3 +8,4 @@ const fromEuroToDollar = () => {};
 const fromDollarToYen = () => {};
 const fromYenToPound = () => {};
 
+module.export = {fromEuroToDollar, fromDollarToYen, fromYenToPound };
