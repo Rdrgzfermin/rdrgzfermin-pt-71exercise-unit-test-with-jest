@@ -5,7 +5,10 @@ let oneEuroIs = {
 }
 
 const fromEuroToDollar = () => {};
+    return
 const fromDollarToYen = () => {};
+    return
 const fromYenToPound = () => {};
+    return
 
 module.export = {fromEuroToDollar, fromDollarToYen, fromYenToPound };
