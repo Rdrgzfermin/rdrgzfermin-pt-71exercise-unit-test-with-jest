@@ -37,4 +37,4 @@ test("One yen should be 0.87 euros", function() {
     
      expect(fromEuroToDollar(156.5)).toBe(0.87);
 })
-module.export = {sum};
+module.export = {sum, fromEuroToDollar, fromDollarToYen, fromYenToEuro};
