@@ -21,20 +21,20 @@ test("One euro should be 1.07 dollars", function() {
 test("One dollar should be 156.5 yen ", function() {
     const { fromDollarToYen } = require('./app.js');
 
-    const yen = fromDollarToYen();
+    const yen = fromDollarToYen(156.5);
 
     const expected = 1.07 * 156.5; 
     
-     expect(fromDollarToYen(1.07)).toBe(156.5);
+    expect(fromDollarToYen(1.07)).toBe(156.5);
 })
 
 test("One yen should be 0.87 euros", function() {
     const { fromYenToEuro } = require('./app.js');
 
-    const euro = fromYenToEuro();
+    const euro = fromYenToEuro(0.87);
 
     const expected =  156.5 * 0.87; 
     
-     expect(fromEuroToDollar(156.5)).toBe(0.87);
+    expect(fromEuroToDollar(156.5)).toBe(0.87);
 })
-module.export = {sum, fromEuroToDollar, fromDollarToYen, fromYenToEuro};
+//module.export = {sum, fromEuroToDollar, fromDollarToYen, fromYenToEuro};
