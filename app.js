@@ -4,17 +4,13 @@ let oneEuroIs = {
     "GBP": 0.87, // british pound
 };
 
-const fromEuroToDollar = (valueInEuro) => {
-    let valueInDollar = valueInEuro * 1.07;
-    return valueInDollar;
+const fromEuroToDollar = (euro) => {
+    return euro *1.07
 };
-const fromDollarToYen = (valueInYen) => {
-    let valueInYen = valueInDollar * 0.87;
-    return valueInYen;
+const fromDollarToYen = (dollar) => {
+    return dollar /1.07 * 156.5
 };
-const fromYenToEuro = (valueInEuro) => {
-    let valueInEuro = valueInYen * 156.5;
-    return valueInEuro;
+const fromYenToPound = (yen) => {
+    return yen /156.5 * .87
 };
-
-module.export = {sum, fromEuroToDollar, fromDollarToYen, fromYenToEuro};
+module.export = { fromEuroToDollar, fromDollarToYen, fromYenToPound};
