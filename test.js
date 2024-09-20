@@ -31,7 +31,7 @@ test("3.50 dollar should be 511.91 yen ", () => {
 test("3.5 Yen should be 1.07 pound", () => {
         const { fromYenToPound } = require('./app.js');
 
-        const euro = fromYenToPound(3.5);
+        const pound = fromYenToPound(3.5);
 
         const expected = 3.5 / 156.5 * .87;
 
